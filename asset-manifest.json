@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/sourabh-bhatt/portfolio2.0/static/css/main.9171aa33.css",
+    "main.js": "/sourabh-bhatt/portfolio2.0/static/js/main.ef5903f1.js",
+    "static/media/profile.png": "/sourabh-bhatt/portfolio2.0/static/media/profile.ff4e6d2a512e80b8f453.png",
+    "static/media/storetodoorweb.png": "/sourabh-bhatt/portfolio2.0/static/media/storetodoorweb.443a318db01c6adcd449.png",
+    "static/media/Bijnis.PNG": "/sourabh-bhatt/portfolio2.0/static/media/Bijnis.1cd349f4e55cbcf69d9f.PNG",
+    "static/media/omShantiStore.jpg": "/sourabh-bhatt/portfolio2.0/static/media/omShantiStore.5e4115577bb8d1b74bc5.jpg",
+    "static/media/SourabhResume.pdf": "/sourabh-bhatt/portfolio2.0/static/media/SourabhResume.9b40040278fdf4301c27.pdf",
+    "static/media/bookCash.png": "/sourabh-bhatt/portfolio2.0/static/media/bookCash.3d9c41a95eacf7933dea.png",
+    "static/media/storetodoor1.jpg": "/sourabh-bhatt/portfolio2.0/static/media/storetodoor1.c35a85a8313cf1ae55b2.jpg",
+    "static/media/andgouser.jpg": "/sourabh-bhatt/portfolio2.0/static/media/andgouser.e5b1b2bdd6e40f96fbed.jpg",
+    "static/media/uwanxt.jpg": "/sourabh-bhatt/portfolio2.0/static/media/uwanxt.e006efc52bf19a122b50.jpg",
+    "static/media/storetodoor2.jpg": "/sourabh-bhatt/portfolio2.0/static/media/storetodoor2.c5816866151b37b9918d.jpg",
+    "static/media/studyIq.png": "/sourabh-bhatt/portfolio2.0/static/media/studyIq.7a3c327c8d8d22acd89d.png",
+    "static/media/portfolio.png": "/sourabh-bhatt/portfolio2.0/static/media/portfolio.7bc0814271b43d5921dc.png",
+    "static/media/local.jpg": "/sourabh-bhatt/portfolio2.0/static/media/local.3e22379b3da3299846b2.jpg",
+    "static/media/socialExchange1.jpg": "/sourabh-bhatt/portfolio2.0/static/media/socialExchange1.d946d667d384f80f3aae.jpg",
+    "static/media/andgo1.jpg": "/sourabh-bhatt/portfolio2.0/static/media/andgo1.87800f25dac84d778c7d.jpg",
+    "static/media/shofar2.jpg": "/sourabh-bhatt/portfolio2.0/static/media/shofar2.a97b2c0dd6945b700369.jpg",
+    "static/media/mgb.jpg": "/sourabh-bhatt/portfolio2.0/static/media/mgb.f88d146fcf6a3a70ba0c.jpg",
+    "static/media/amz.png": "/sourabh-bhatt/portfolio2.0/static/media/amz.6b4b46458b56e89016b6.png",
+    "static/media/loading-arrow.gif": "/sourabh-bhatt/portfolio2.0/static/media/loading-arrow.dd29210f39418b50813e.gif",
+    "index.html": "/sourabh-bhatt/portfolio2.0/index.html",
+    "main.9171aa33.css.map": "/sourabh-bhatt/portfolio2.0/static/css/main.9171aa33.css.map",
+    "main.ef5903f1.js.map": "/sourabh-bhatt/portfolio2.0/static/js/main.ef5903f1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9171aa33.css",
+    "static/js/main.ef5903f1.js"
+  ]
+}
