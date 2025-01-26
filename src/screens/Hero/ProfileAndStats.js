@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 import ProfileImage from "./ProfileImage";
 import StatsContainer from "./StatsContainer";
-import profileImage from "../../assets/profile.png";
+import profileImage from "../../assets/SOURABH_PP1.png";
 
 const ProfileSection = styled(motion.div)`
   display: flex;

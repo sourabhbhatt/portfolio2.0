@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found</title>
+    <script>
+      // Redirect all requests to the index.html
+      const redirectToIndex = () => {
+        const url = window.location.pathname.replace('/<portfolio2.0>', '');
+        window.location.replace('/<portfolio2.0>/' + '#' + url);
+      };
+
+      redirectToIndex();
+    </script>
+  </head>
+  <body>
+    <h1>Redirecting...</h1>
+    <p>If you are not redirected automatically, <a href="/">click here</a>.</p>
+  </body>
+</html>

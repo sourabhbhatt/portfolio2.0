@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 const StyledProfileImage = styled.img`
   width: 350px;
-  height: 400px;
+  height: 380px;
   border-radius: 2%;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-  object-fit: cover; /* Ensures the image maintains aspect ratio while filling its container */
+  object-fit: contain; /* Ensures the image maintains aspect ratio while filling its container */
 
   @media (max-width: 768px) {
     width: 80%; /* Adjust width for smaller screens */
