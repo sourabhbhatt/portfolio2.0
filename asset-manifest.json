@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio2.0/static/css/main.9171aa33.css",
-    "main.js": "/portfolio2.0/static/js/main.eb1b03fc.js",
+    "main.js": "/portfolio2.0/static/js/main.07dbf256.js",
     "static/media/SOURABH_PP1.png": "/portfolio2.0/static/media/SOURABH_PP1.dadb469a1a25ab8a61ee.png",
     "static/media/storetodoorweb.png": "/portfolio2.0/static/media/storetodoorweb.443a318db01c6adcd449.png",
     "static/media/Bijnis.PNG": "/portfolio2.0/static/media/Bijnis.1cd349f4e55cbcf69d9f.PNG",
     "static/media/omShantiStore.jpg": "/portfolio2.0/static/media/omShantiStore.5e4115577bb8d1b74bc5.jpg",
-    "static/media/SourabhResume.pdf": "/portfolio2.0/static/media/SourabhResume.9b40040278fdf4301c27.pdf",
+    "static/media/SourabhResume.pdf": "/portfolio2.0/static/media/SourabhResume.ba667a003fc0222a89f6.pdf",
     "static/media/bookCash.png": "/portfolio2.0/static/media/bookCash.3d9c41a95eacf7933dea.png",
     "static/media/storetodoor1.jpg": "/portfolio2.0/static/media/storetodoor1.c35a85a8313cf1ae55b2.jpg",
     "static/media/andgouser.jpg": "/portfolio2.0/static/media/andgouser.e5b1b2bdd6e40f96fbed.jpg",
@@ -23,10 +23,10 @@
     "static/media/loading-arrow.gif": "/portfolio2.0/static/media/loading-arrow.dd29210f39418b50813e.gif",
     "index.html": "/portfolio2.0/index.html",
     "main.9171aa33.css.map": "/portfolio2.0/static/css/main.9171aa33.css.map",
-    "main.eb1b03fc.js.map": "/portfolio2.0/static/js/main.eb1b03fc.js.map"
+    "main.07dbf256.js.map": "/portfolio2.0/static/js/main.07dbf256.js.map"
   },
   "entrypoints": [
     "static/css/main.9171aa33.css",
-    "static/js/main.eb1b03fc.js"
+    "static/js/main.07dbf256.js"
   ]
 }
