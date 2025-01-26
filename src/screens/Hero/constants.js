@@ -33,26 +33,26 @@ export const techData = {
     { name: "Node.js", icon: <FaNodeJs /> },
     { name: "Express.js", icon: <FaNodeJs /> },
     { name: "Firebase", icon: <SiFirebase /> },
-    { name: "GraphQL", icon: <SiGraphql /> },
-  ],
-  database: [
-    { name: "MongoDB", icon: <SiMongodb /> },
-    { name: "Firestore", icon: <SiFirebase /> },
-    { name: "PostgreSQL", icon: <SiPostgresql /> },
-    { name: "MySQL", icon: <SiMysql /> },
+    // { name: "GraphQL", icon: <SiGraphql /> },
   ],
   tools: [
     { name: "GitHub", icon: <FaGithub /> },
     { name: "Bitbucket", icon: <SiBitbucket /> },
     { name: "Git", icon: <SiGit /> },
     { name: "GitLab", icon: <SiGitlab /> },
-    { name: "Docker", icon: <FaDocker /> },
+    // { name: "Docker", icon: <FaDocker /> },
     { name: "AWS", icon: <FaAws /> },
+  ],
+  database: [
+    { name: "MongoDB", icon: <SiMongodb /> },
+    { name: "Firestore", icon: <SiFirebase /> },
+    // { name: "PostgreSQL", icon: <SiPostgresql /> },
+    // { name: "MySQL", icon: <SiMysql /> },
   ],
 };
 
 export const statsData = [
   { value: "5+", label: "Years of Experience" },
   { value: "10+", label: "Applications Developed" },
-  { value: "100K+", label: "Downloads" },
+  { value: "2M+", label: "Downloads" },
 ];
