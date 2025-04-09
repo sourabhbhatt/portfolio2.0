@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { ReactComponent as Logo } from "../assets/logo.svg";
 import ResumeDownloaderButton from "../components/ResumeDownloaderButton";
 
 function Header({ style = {}, onNavigate = () => {} }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    // { key: "articles", value: "Articles" },
-    { key: "home", value: "Home" },
-    { key: "experiences", value: "Experiences" },
-    { key: "projects", value: "My Projects" },
-    { key: "contact", value: "Let's Talk" },
+    { key: "articles", value: "⚗️ Labs & Demos" },
+    { key: "home", value: "🏠 Homebase" },
+    { key: "experiences", value: "🧠 XP Logs" },
+    { key: "projects", value: "🛠️ Build Vault" },
+    { key: "contact", value: "📡 Ping Me" },
   ];
 
   const toggleMenu = () => {
@@ -18,8 +19,10 @@ function Header({ style = {}, onNavigate = () => {} }) {
   };
 
   const handleNavigate = (key) => {
-    onNavigate(key);
-    setIsMenuOpen(false); // Close menu after navigation
+    if (key === "articles")
+      window.open("https://sourabhbhatt.github.io/sourBlitz/", "_blank");
+    else onNavigate(key);
+    setIsMenuOpen(false);
   };
 
   return (
@@ -27,18 +30,19 @@ function Header({ style = {}, onNavigate = () => {} }) {
       className={`sticky top-0 bg-black bg-opacity-70 text-white px-6 py-4 shadow-sm z-50 ${style} `}
     >
       <div className="flex justify-between items-center">
-        {/* Logo */}
         <motion.h1
-          className="text-3xl font-bold cursor-pointer"
+          className="text-3xl font-bold cursor-pointer flex items-center gap-2"
           onClick={() => handleNavigate("home")}
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
+          <div className="bg-white rounded-full p-1">
+            <Logo className="w-10 h-10" />
+          </div>
           {`Portfolio`}
         </motion.h1>
 
-        {/* Desktop Navigation Links */}
         <nav className="hidden md:flex items-center gap-6">
           {navItems.map((item, index) => (
             <motion.span
@@ -53,7 +57,6 @@ function Header({ style = {}, onNavigate = () => {} }) {
             </motion.span>
           ))}
 
-          {/* Resume Button */}
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -63,7 +66,6 @@ function Header({ style = {}, onNavigate = () => {} }) {
           </motion.div>
         </nav>
 
-        {/* Hamburger Menu for Mobile */}
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
@@ -81,7 +83,6 @@ function Header({ style = {}, onNavigate = () => {} }) {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <motion.div
           className="md:hidden bg-black bg-opacity-90 text-white p-6 absolute top-16 left-0 right-0 z-40 flex flex-col items-center gap-4"

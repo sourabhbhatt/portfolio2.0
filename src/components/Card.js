@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 import styled from "styled-components";
-import { FaMobileAlt, FaGlobe } from "react-icons/fa"; // Import mobile and web icons
+import { FaMobileAlt, FaGlobe } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 // Styled components for the Card
 const StyledCard = styled(motion.article)`
@@ -87,16 +88,20 @@ const Info = styled.div`
 
 const HoverOverlay = styled(motion.div)`
   position: absolute;
-  inset: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30%; // show only bottom portion
   display: flex;
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.6);
   opacity: 0;
   transition: opacity 0.3s ease;
+  pointer-events: none; // prevent hover area expanding
 
-  &:hover {
+  ${StyledCard}:hover & {
     opacity: 1;
+    pointer-events: auto;
   }
 
   a {
@@ -117,8 +122,16 @@ const HoverOverlay = styled(motion.div)`
   }
 `;
 
+
 export default function Card({ room, index, type = "mobile" }) {
-  const { name, slug, images, propTypes } = room;
+  const { name, slug, images = [], propTypes } = room;
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNext = () =>
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+
+  const handlePrev = () =>
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
 
   return (
     <StyledCard
@@ -128,8 +141,55 @@ export default function Card({ room, index, type = "mobile" }) {
       transition={{ duration: 0.4 }}
     >
       {/* Image Container */}
+
       <ImageContainer>
-        <img src={images} alt={`${name} project`} />
+        <img src={images[currentIndex]} alt={`${name} project`} />
+
+        {images.length > 1 && (
+          <>
+            <button
+              onClick={handlePrev}
+              style={{
+                position: "absolute",
+                left: 10,
+                top: "50%",
+                transform: "translateY(-50%)",
+                background: "rgba(255,255,255,0.7)",
+                border: "none",
+                borderRadius: "50%",
+                width: 30,
+                height: 30,
+                cursor: "pointer",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <FaChevronLeft size={14} color="#000" />
+            </button>
+            <button
+              onClick={handleNext}
+              style={{
+                position: "absolute",
+                right: 10,
+                top: "50%",
+                transform: "translateY(-50%)",
+                background: "rgba(255,255,255,0.7)",
+                border: "none",
+                borderRadius: "50%",
+                width: 30,
+                height: 30,
+                cursor: "pointer",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <FaChevronRight size={14} color="#000" />
+            </button>
+          </>
+        )}
+
         <Badge
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -153,7 +213,7 @@ export default function Card({ room, index, type = "mobile" }) {
       <HoverOverlay>
         <Link
           to={{
-            pathname: `/Portfolio/${slug}`,
+            pathname: `/project/${slug}`,
             state: { roomName: name },
           }}
         >
@@ -168,6 +228,6 @@ Card.propTypes = {
   room: PropTypes.shape({
     name: PropTypes.string.isRequired,
     slug: PropTypes.string.isRequired,
-    images: PropTypes.string.isRequired,
+    images: PropTypes.arrayOf(PropTypes.string).isRequired,
   }),
 };

@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { ThemeProvider } from "styled-components";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import Hero from "./screens/Hero";
 import Header from "./screens/Header";
@@ -11,8 +12,9 @@ import { theme } from "./components/Themes";
 import Footer from "./screens/Footer";
 import Articles from "./screens/Articles";
 import Experiences from "./screens/Experiences";
+import ProjectDetails from "./screens/ProjectDetails";
 
-function App() {
+function HomePage() {
   const homeRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
@@ -35,31 +37,37 @@ function App() {
   };
 
   return (
+    <>
+      <Header onNavigate={handleNavigate} />
+      <section id="home" ref={homeRef}>
+        <Hero />
+      </section>
+      <section id="experiences" ref={experiencesRef}>
+        <Experiences />
+      </section>
+      <section id="projects" ref={projectsRef}>
+        <Projects />
+      </section>
+      <section id="articles" ref={articlesRef}>
+        <Articles />
+      </section>
+      <section id="contact" ref={contactRef}>
+        <Contact />
+      </section>
+    </>
+  );
+}
+
+function App() {
+  return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Wrapper>
-        <Header onNavigate={handleNavigate} />
-
-        <section id="home" ref={homeRef}>
-          <Hero />
-        </section>
-
-        <section id="experiences" ref={experiencesRef}>
-          <Experiences />
-        </section>
-
-        <section id="projects" ref={projectsRef}>
-          <Projects />
-        </section>
-
-        <section id="articles" ref={articlesRef}>
-          <Articles />
-        </section>
-
-        {/* Contact Section */}
-        <section id="contact" ref={contactRef}>
-          <Contact />
-        </section>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/project/:slug" element={<ProjectDetails />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
       </Wrapper>
       <Footer />
     </ThemeProvider>
