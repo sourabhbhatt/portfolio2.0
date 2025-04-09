@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio2.0/static/css/main.848a9718.css",
-    "main.js": "/portfolio2.0/static/js/main.7970f86f.js",
+    "main.js": "/portfolio2.0/static/js/main.86c03fdb.js",
     "static/media/SOURABH_PP1.png": "/portfolio2.0/static/media/SOURABH_PP1.dadb469a1a25ab8a61ee.png",
     "static/media/storetodoorweb.png": "/portfolio2.0/static/media/storetodoorweb.443a318db01c6adcd449.png",
     "static/media/Bijnis.PNG": "/portfolio2.0/static/media/Bijnis.1cd349f4e55cbcf69d9f.PNG",
@@ -28,10 +28,10 @@
     "static/media/slick.woff": "/portfolio2.0/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portfolio2.0/index.html",
     "main.848a9718.css.map": "/portfolio2.0/static/css/main.848a9718.css.map",
-    "main.7970f86f.js.map": "/portfolio2.0/static/js/main.7970f86f.js.map"
+    "main.86c03fdb.js.map": "/portfolio2.0/static/js/main.86c03fdb.js.map"
   },
   "entrypoints": [
     "static/css/main.848a9718.css",
-    "static/js/main.7970f86f.js"
+    "static/js/main.86c03fdb.js"
   ]
 }
