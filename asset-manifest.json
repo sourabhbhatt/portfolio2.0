@@ -1,12 +1,11 @@
 {
   "files": {
     "main.css": "/portfolio2.0/static/css/main.848a9718.css",
-    "main.js": "/portfolio2.0/static/js/main.86c03fdb.js",
+    "main.js": "/portfolio2.0/static/js/main.aa8343b0.js",
     "static/media/SOURABH_PP1.png": "/portfolio2.0/static/media/SOURABH_PP1.dadb469a1a25ab8a61ee.png",
     "static/media/storetodoorweb.png": "/portfolio2.0/static/media/storetodoorweb.443a318db01c6adcd449.png",
     "static/media/Bijnis.PNG": "/portfolio2.0/static/media/Bijnis.1cd349f4e55cbcf69d9f.PNG",
     "static/media/omShantiStore.jpg": "/portfolio2.0/static/media/omShantiStore.5e4115577bb8d1b74bc5.jpg",
-    "static/media/SourabhResume.pdf": "/portfolio2.0/static/media/SourabhResume.ba667a003fc0222a89f6.pdf",
     "static/media/bookCash.png": "/portfolio2.0/static/media/bookCash.3d9c41a95eacf7933dea.png",
     "static/media/storetodoor1.jpg": "/portfolio2.0/static/media/storetodoor1.c35a85a8313cf1ae55b2.jpg",
     "static/media/andgouser.jpg": "/portfolio2.0/static/media/andgouser.e5b1b2bdd6e40f96fbed.jpg",
@@ -20,6 +19,7 @@
     "static/media/shofar2.jpg": "/portfolio2.0/static/media/shofar2.a97b2c0dd6945b700369.jpg",
     "static/media/mgb.jpg": "/portfolio2.0/static/media/mgb.f88d146fcf6a3a70ba0c.jpg",
     "static/media/amz.png": "/portfolio2.0/static/media/amz.6b4b46458b56e89016b6.png",
+    "static/media/SourabhResume.pdf": "/portfolio2.0/static/media/SourabhResume.480cb4ce36e1164bca25.pdf",
     "static/media/loading-arrow.gif": "/portfolio2.0/static/media/loading-arrow.dd29210f39418b50813e.gif",
     "static/media/logo.svg": "/portfolio2.0/static/media/logo.104a881c86f800a26c33d9549bcaad2b.svg",
     "static/media/slick.svg": "/portfolio2.0/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -28,10 +28,10 @@
     "static/media/slick.woff": "/portfolio2.0/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portfolio2.0/index.html",
     "main.848a9718.css.map": "/portfolio2.0/static/css/main.848a9718.css.map",
-    "main.86c03fdb.js.map": "/portfolio2.0/static/js/main.86c03fdb.js.map"
+    "main.aa8343b0.js.map": "/portfolio2.0/static/js/main.aa8343b0.js.map"
   },
   "entrypoints": [
     "static/css/main.848a9718.css",
-    "static/js/main.86c03fdb.js"
+    "static/js/main.aa8343b0.js"
   ]
 }
