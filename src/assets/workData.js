@@ -19,7 +19,7 @@ export const mobileProjects = [
   {
     name: "Bijnis",
     slug: "bijnis",
-    images: [bijnis, MGB, bijnis],
+    images: [bijnis, bijnis],
     projects: [
       {
         title: "Bijnis – Sourcing & Wholesale Marketplace",
@@ -49,9 +49,48 @@ export const mobileProjects = [
     ],
   },
   {
+    name: "Uwanxt",
+    slug: "uwanxt",
+    images: [uwanxt],
+    projects: [
+      {
+        title: "Uwanxt – Smart Home Controller",
+        description:
+          "Control your smart home devices using a single mobile interface powered by IoT and MQTT protocols.",
+        android: "",
+        ios: "",
+        web: "",
+        github: "",
+        imgPaths: ["Projects/andgouser.jpg"],
+        technologies: ["React Native", "IoT", "MQTT"],
+        languages: ["JavaScript", "CSS"],
+      },
+    ],
+  },
+  {
+    name: "Store To Door – User",
+    slug: "storetodoor-user",
+    images: [storetodoor],
+    projects: [
+      {
+        title: "Store To Door – User App",
+        description:
+          "A grocery and utility delivery app where users can schedule pickups and deliveries straight to their door.",
+        android:
+          "https://play.google.com/store/apps/details?id=com.storetodooruser",
+        ios: "",
+        web: "",
+        github: "",
+        imgPaths: ["Projects/storetodoor1.jpg"],
+        technologies: ["React Native", "Firebase", "Vue.js", "Node.js"],
+        languages: ["JavaScript", "TypeScript"],
+      },
+    ],
+  },
+  {
     name: "My Glove Box",
     slug: "mgb",
-    images: [MGB,MGB],
+    images: [MGB],
     projects: [
       {
         title: "My Glove Box – Personal Document Organizer",
@@ -86,45 +125,7 @@ export const mobileProjects = [
       },
     ],
   },
-  {
-    name: "Store To Door – User",
-    slug: "storetodoor-user",
-    images: [storetodoor],
-    projects: [
-      {
-        title: "Store To Door – User App",
-        description:
-          "A grocery and utility delivery app where users can schedule pickups and deliveries straight to their door.",
-        android:
-          "https://play.google.com/store/apps/details?id=com.storetodooruser",
-        ios: "",
-        web: "",
-        github: "",
-        imgPaths: ["Projects/storetodoor1.jpg"],
-        technologies: ["React Native", "Firebase", "Vue.js", "Node.js"],
-        languages: ["JavaScript", "TypeScript"],
-      },
-    ],
-  },
-  {
-    name: "Uwanxt",
-    slug: "uwanxt",
-    images: [uwanxt],
-    projects: [
-      {
-        title: "Uwanxt – Smart Home Controller",
-        description:
-          "Control your smart home devices using a single mobile interface powered by IoT and MQTT protocols.",
-        android: "",
-        ios: "",
-        web: "",
-        github: "",
-        imgPaths: ["Projects/andgouser.jpg"],
-        technologies: ["React Native", "IoT", "MQTT"],
-        languages: ["JavaScript", "CSS"],
-      },
-    ],
-  },
+
   {
     name: "AndGo – User",
     slug: "andgo-user",

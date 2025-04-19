@@ -7,11 +7,11 @@ function Header({ style = {}, onNavigate = () => {} }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { key: "articles", value: "⚗️ Labs & Demos" },
-    { key: "home", value: "🏠 Homebase" },
-    { key: "experiences", value: "🧠 XP Logs" },
-    { key: "projects", value: "🛠️ Build Vault" },
-    { key: "contact", value: "📡 Ping Me" },
+    { key: "home", value: "Home" },
+    { key: "projects", value: "Projects" },
+    { key: "experiences", value: "Dev Journey" },
+    { key: "articles", value: "Tech Experiments" },
+    { key: "contact", value: "Ping Me" },
   ];
 
   const toggleMenu = () => {
